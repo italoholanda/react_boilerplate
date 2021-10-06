@@ -24,14 +24,11 @@ module.exports = {
 
 	},
 	plugins: [
-
-		// Definição do plugin
 		isDevelopment && new ReactRefreshWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'public', 'index.html')
 		})
 	].filter(Boolean),
-
 	module: {
 		rules: [
 			{
@@ -48,6 +45,11 @@ module.exports = {
 					}
 				}
 
+			},
+			{
+				test: /\.css$/,
+				exclude: /node_modules/,
+				use: ['style-loader', 'css-loader']
 			},
 			{
 				test: /\.css$/,

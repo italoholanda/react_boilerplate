@@ -29,5 +29,5 @@ I wanted to create a very basic boilerplate for React applications with some sup
 - `sass-loader`
 - `node-sass`
 - `@pmmmwh/react-refresh-webpack-plugin`
-- `react-refresh
+- `react-refresh`
 
